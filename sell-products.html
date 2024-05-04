@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sell Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+ 
+     <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .signup-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .signup-form {
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: auto;
+      }
+
+      .signup-form h2 {
+        margin: 0 0 20px;
+      }
+
+      .signup-form input {
+        width: calc(100% - 24px);
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 0 8px;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      .signup-form input:hover {
+        border-color: #007bff;
+      }
+
+      .signup-form button {
+        width: calc(100% + 20px);
+        height: 40px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-left: -10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .signup-form button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+</head>
+  <body>
+    <header>
+      <div class="navbar" id="navbar">
+        <!-- Left Navigation Here -->
+        <div class="nav-left">
+          <a href="/" class="nav-logo border">
+            <img src="amz_logo1.png" alt="" />
+          </a>
+
+          <div class="nav-location border">
+            <span>Deliver to</span>
+            <div class="nav-location-tag">
+              <i class="fa fa-map-marker"></i>
+              <span>India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Middle Navigation Here -->
+        <div class="nav-mid">
+          <div class="nav-search">
+            <div class="search-all">
+              <select name="" id="" class="search-select">
+                <option value="">All</option>
+              </select>
+            </div>
+
+            <input
+              type="text"
+              placeholder="Search Amazon"
+              class="search-input"
+            />
+
+            <div class="search-icon">
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Navigation Here -->
+        <div class="nav-right">
+          <div class="nav-flag border">
+            <img src="india.svg" alt="" height="15px" />
+
+            <select name="" id="" class="En">
+              <option value="En">En</option>
+            </select>
+          </div>
+
+          <a href="/signup.html" class="nav-link-account border">
+            <span class="nav-link-span1">sign up</span>
+            <span class="nav-link-span2">Account & List</span>
+          </a>
+
+          <div class="nav-return border">
+            <span class="nav-return-span1">Returns</span>
+            <span class="nav-return-span2">& Orders</span>
+          </div>
+
+          <a href="/cart.html" class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Cart</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="signup-container">
+      <form class="signup-form">
+        <h2 style="color: black">Add Products</h2>
+        <input type="number" placeholder="Product Id">
+        <input type="text" placeholder="Name" required />
+        <input type="number" placeholder="Price" required />
+       <input type="text" placeholder="Category" required>
+        <button type="submit" value="submit">Add Product</button>
+      </form>
+    </div>
+    <div class="footer2">
+      <div class="foot-div1">
+        <h4 class="foot-h4">Amazon Payment Products</h4>
+        <div class="ft1">
+          <p>Amazon Business Card</p>
+          <p>Shop with Points</p>
+          <p>Reload Your Balance</p>
+        </div>
+      </div>
+
+      <div class="foot-div2">
+        <h4 class="foot-h4">Amazon Payment Products</h4>
+        <div class="ft2">
+          <p>Amazon Business Card</p>
+          <p>Shop with Points</p>
+          <p>Reload Your Balance</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
